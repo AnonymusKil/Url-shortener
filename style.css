@@ -1,3 +1,14 @@
+:root {
+  --Cyan: hsl(180, 66%, 49%);
+  --Dark-Violet: hwb(258 19% 67%);
+
+  --Red: hsl(0, 87%, 67%);
+
+  --Gray: hsl(0, 0%, 90%);
+  --Grayish-Violet: hsl(257, 7%, 63%);
+  --Very-Dark-Blue: hsl(255, 11%, 22%);
+  --Very-Dark-Violet: hsl(260, 8%, 14%);
+}
 * {
   padding: 0;
   margin: 0;
@@ -59,7 +70,9 @@ a {
   font-size: 1.7rem;
   cursor: pointer;
 }
-
+img{
+  width: 100%;
+}
 .pluto {
   display: flex;
   flex-direction: column;
@@ -85,6 +98,7 @@ a {
   /* align-items: center;
 justify-content: center; */
   flex-direction: column;
+  z-index: 1;
   display: none;
    font-family: "Poppins", sans-serif;
    font-weight: bolder;
@@ -96,6 +110,15 @@ justify-content: center; */
   transform: translateX(-50%), translateY(0);
   opacity: 1;
 }
+.container p{
+    font-size: 1.8rem;
+    line-height: 1.6;
+    /* margin-block: 2rem 4rem; */
+  
+}
+.container h1{
+line-height: 1.1;
+}
 .container{
   display: flex;
   align-items: center;
@@ -103,10 +126,14 @@ justify-content: center; */
   flex-direction: column-reverse;
   padding: 1.3rem;
   text-align: center;
+  overflow: hidden;
+ 
+
+
 }
-.container img{
+/* .container img{
   width: 300px;
-}
+} */
 .container button{
   background-color: #2acfcf;
   color: white;
@@ -119,6 +146,11 @@ justify-content: center; */
 /* .container h1{
   font-size: 1.9rem;
 } */
+
+.illustration{
+  transform: translate(25%, 0);
+  
+}
 @media (min-width: 1024px) {
   .flex-zone {
     display: flex;
@@ -158,6 +190,7 @@ justify-content: center; */
   .container{
     flex-direction: row;
     text-align: initial;
+    justify-content: space-between;
   }
   .container img{
     width: 600px;
