@@ -25,6 +25,9 @@
 
     <link rel="shortcut icon" href="url-shortening-api-master/images/favicon-32x32.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -100,13 +103,27 @@
           <input
             type="text"
             placeholder="Shorten a link here..."
-            name=""
-            id=""
+            name="get-link"
+            id="get-user-link"
           />
-          <button class="btn-primary" type="button">Shorten it</button>
+          <button class="btn-primary" type="button" id="btn">Shorten it</button>
         </form>
+        <!-- to show user link -->
+      </section>
+      <section>
+        
       </section>
       <section class="section-statistics">
+        <div class="result-container" id="result">
+          <div>
+            <a href="https://www.frontendmentor.io">Frontend</a>
+          </div>
+          <hr>
+          <div class="change">
+            <a href="https://www.frontendmentor.io">Frontend</a>
+            <button>Copy</button>
+          </div>
+        </div>
         <div class="section-header">
           <h2>Advanced Statistics</h2>
           <p>
